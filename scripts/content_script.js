@@ -24,6 +24,10 @@ var sortDropdown = function(options) {
         options[i] = optionsArray[i];
     }
     options[0].selected = true;
+    
+    if (Number(options[0].substring(1)) < 50) {
+        alert('low price')
+    }
 };
 var colorChanges = function(options, colors, toggles) {
     for (var i = 0; i < options.length; i++) {
