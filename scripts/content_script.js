@@ -25,7 +25,7 @@ var sortDropdown = function(options) {
     }
     options[0].selected = true;
     
-    if (Number(options[0].price.substring(1, options[0].price.indexOf('.'))) < 50) {
+    if (Number(options[0].innerText.substring(options[0].price.indexOf('$'), options[0].price.indexOf('.'))) < 50) {
         alert('low price')
     }
 };
